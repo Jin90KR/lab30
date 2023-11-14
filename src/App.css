@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1300px;
+
+}
+
+.logo{
+  margin-right: 220px;
+  font-weight: 500;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 30px;
+  height: 50px;
+  padding: 5px 20px;
+}
+
+.searchbtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 338px;
+  height: 38px;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: rgb(243, 243, 251);
+  padding: 10px;
+}
+
+.btntext{
+  color: gray
+}
+
+.top-icons{
+  cursor: pointer;
+}
+
+
+.header-nav{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 20px 20px;
+  gap: 40px;
+}
+
+.header-nav li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.adtext{
+  width: 100vw;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
