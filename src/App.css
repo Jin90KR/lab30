@@ -72,3 +72,134 @@
   align-items: center;
 }
 
+
+/* footer css */
+
+.footer{
+  border-top: 1px solid rgb(223, 230, 234);
+  margin-top: 100px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content:left;
+  margin-left: 20px;
+  width: 500px;
+}
+
+.footer-top p a{
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(96, 94, 94);
+  margin-right: 60px;
+}
+
+.footer-button button{
+  background-color: white;
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: 1px solid rgb(147, 146, 146);
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+} 
+
+.download-app{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.download-text{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.app-store{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  width: 140px;
+  height: 30px;
+  font-size: 23px;
+  border: 1px solid rgb(147, 146, 146);
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.app-text{
+  height: 40px;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.app-text p{
+  margin: 0 0;
+  font-weight: bolder;
+}
+
+.big-text{
+  font-size: 18px;
+}
+
+.apps{
+  display: flex;
+  gap: 20px;
+}
+
+.snsicons{
+  margin-top: 80px;
+  display: flex;
+  margin-left: 20px;
+  font-size: 25px;
+  gap: 40px;
+}
+
+.circle{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.snsicons a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+}
+
+.footer-about{
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: white;
+  border-style: none;
+  color:rgb(69, 69, 69)
+}
+
+.uparrow{
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.footer-last{
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 12px;
+  color:rgb(159, 159, 159)
+}
