@@ -19,6 +19,9 @@ function Header() {
                                 <RiSearchLine /> Search
                             </p>
                         </button>
+                        <button className="hdsearchbtn">
+                                <RiSearchLine />
+                        </button>
                     </div>
                     <div className="logo">
                         <p>MUJINJANG</p>

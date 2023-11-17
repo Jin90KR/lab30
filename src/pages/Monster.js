@@ -1,6 +1,6 @@
 
 
-function Monstersale() {
+function Monster() {
     return (
         <div className='monstersale'>
             Monstersale
@@ -8,4 +8,4 @@ function Monstersale() {
     );
 };
 
-export default Monstersale;
+export default Monster;
