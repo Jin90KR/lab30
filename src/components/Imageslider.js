@@ -8,7 +8,7 @@ const ImageSlider = () => {
 
   const autoScroll = true;
   let slideInterval;
-  let intervalTime = 2500;
+  let intervalTime = 3000;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);

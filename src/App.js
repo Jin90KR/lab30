@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Layout from './components/Layout';
-import Brands from './pages/BRANDS';
+import Brands from './pages/Brands';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -20,6 +20,6 @@ function App() {
       </Route>
     </Routes>
   );
-}
+};
 
 export default App;

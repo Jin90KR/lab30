@@ -12,7 +12,7 @@
 }
 
 .logo{
-  margin-right: 220px;
+  margin-right: 200px;
   font-weight: 500;
 }
 
@@ -49,6 +49,8 @@
 }
 
 .top-icons{
+  display: flex;
+  gap: 15px;
   cursor: pointer;
 }
 
@@ -76,6 +78,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.bottom-navbar{
+  display: none;
+}
+
+
 
 
 /* footer css */
@@ -225,6 +233,8 @@
   margin-top: 50px;
 }
 
+
+
 .top-img img{
   width:100%;
   height: 100%;
@@ -261,7 +271,7 @@
   .top-img{
     margin-top: 0px;
     margin-left: 0px;
-    width: 100%;
+    width: 100% ;
   }
 
   .header-nav{
@@ -285,6 +295,11 @@
     font-weight: 400;
   }
 
+  .icon-heart,
+  .icon-person{
+    display: none;
+  }
+
   .top-text{
     width: auto;
     height: auto;
@@ -300,6 +315,14 @@
   .main-small-text{
     font-size: 15px;
     color: rgb(100, 100, 100);
+  }
+
+  .bottom-navbar{
+    display: block;
+  }
+
+  .footer{
+    padding-bottom: 150px;
   }
 }
 

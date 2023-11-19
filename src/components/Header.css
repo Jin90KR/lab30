@@ -1,0 +1,43 @@
+
+.navbar-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    flex: 1 1 0%;
+    height: 100%;
+    color: rgb(189, 189, 189)
+}
+
+.icon:hover{
+    color: black;
+}
+
+.icon span{
+    font-size: 13px;
+}
+
+@keyframes fadeIn { from { opacity:0;} to { opacity:1; } }
+
+.fade-in {
+    opacity:0;
+    animation: fadeIn linear 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.7s;
+}
