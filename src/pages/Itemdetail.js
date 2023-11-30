@@ -6,6 +6,8 @@ import { useParams } from 'react-router-dom';
 class Itemdetail extends React.Component {
     constructor(props){
         super(props)
+        console.log(props)
+
         this.state = {
         }
     }
@@ -15,9 +17,8 @@ class Itemdetail extends React.Component {
     // }
 
     render() {
-        const { item } = this.props
-        console.log(this.props.params)
-        console.log(item)
+        const { props } = this.state
+        console.log(props)
 
         return (
             <div className="itemdetail">
@@ -45,7 +46,7 @@ class Itemdetail extends React.Component {
 }
 
 
-
-export default (props) => (
-    <Itemdetail props={ props } params={ useParams() }/>
-)
+export default Itemdetail
+// export default (props) => (
+//     <Itemdetail props ={ props } params={ useParams() }/>
+// )

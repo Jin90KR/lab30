@@ -28,7 +28,7 @@ function Header() {
                     </div>
                     <div className="top-icons">
                         <div className="icon-heart"><VscHeart /></div>
-                        <div className="icon-bag"><BiShoppingBag /></div>
+                        <div className="icon-bag"><Link to='/cart'><BiShoppingBag /></Link></div>
                         <div className="icon-person"><Link to='/login'><GoPerson /></Link></div>
                     </div>
                 </div>

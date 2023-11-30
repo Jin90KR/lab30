@@ -9,10 +9,6 @@
 }
 
 .modalbtn {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    max-width: 1300px;
     z-index: 1;
 }
 
