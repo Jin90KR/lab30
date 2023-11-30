@@ -12,9 +12,11 @@
 }
 
 .logo{
-  margin-right: 200px;
+  margin-right: 0px;
   font-weight: 500;
 }
+
+
 
 .header-top{
   display: flex;
@@ -24,20 +26,6 @@
   font-size: 30px;
   height: 50px;
   padding: 5px 20px;
-}
-
-.searchbtn{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 338px;
-  height: 38px;
-  border-style: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 15px;
-  background-color: rgb(243, 243, 251);
-  padding: 10px;
 }
 
 .hdsearchbtn{
@@ -219,7 +207,8 @@
 
 /* Home */
 
-.main-top{
+.main-top,
+.main-body{
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -272,6 +261,7 @@
     margin-top: 0px;
     margin-left: 0px;
     width: 100% ;
+    height: auto;
   }
 
   .header-nav{
@@ -326,3 +316,10 @@
   }
 }
 
+/* modal */
+
+.modalbtn{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

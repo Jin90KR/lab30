@@ -13,6 +13,10 @@
     z-index: 1;
     cursor: pointer;
 }
+.logo a{
+    text-decoration: none;
+    color: black;
+}
 
 .icon{
     display: flex;
@@ -31,6 +35,10 @@
 
 .icon span{
     font-size: 13px;
+}
+
+.icon-person a{
+    color: black;
 }
 
 @keyframes fadeIn { from { opacity:0;} to { opacity:1; } }

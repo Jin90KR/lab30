@@ -1,0 +1,15 @@
+
+
+.brandsearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 20px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: rgb(243, 243, 251);
+    padding: 10px;
+}

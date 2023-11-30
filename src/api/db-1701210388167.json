@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "image": "https://image.msscdn.net/images/goods_img/20210906/2112059/2112059_1_500.jpg",
+      "item": "SINGLE PLEATED WIDE SWEATPANTS GRAY",
+      "price": "$48",
+      "category": "pants",
+      "brand": "GAKKAI UNIONS"
+    },
+    {
+      "id": "2",
+      "image": "https://image.msscdn.net/images/goods_img/20230816/3469210/3469210_16928610325735_500.jpg",
+      "item": "One tuck parachute cargo denim pants_grey",
+      "price": "$38",
+      "category": "pants",
+      "brand": "DIMITRI BLACK"
+    },
+    {
+      "id": "3",
+      "image": "https://image.msscdn.net/images/goods_img/20231102/3680802/3680802_16989127858051_500.jpg",
+      "item": "Vintage Half Zip Up_Navy",
+      "price": "$66",
+      "category": "top",
+      "brand": "1993STUDIO"
+    },
+    {
+      "id": "4",
+      "image": "https://image.msscdn.net/images/goods_img/20220913/2786406/2786406_2_500.jpg",
+      "item": "LEATHER RIDER JK (NAVY)",
+      "price": "$329",
+      "category": "top",
+      "brand": "WKNDRS"
+    },
+    {
+      "id": "5",
+      "image": "https://image.msscdn.net/images/goods_img/20230322/3170312/3170312_16794685325949_500.jpg",
+      "item": "LONELY/LOVELY FLUFF HOODIE GRAY",
+      "price": "$133",
+      "category": "top",
+      "brand": "NOHANT"
+    },
+    {
+      "id": "6",
+      "image": "https://image.msscdn.net/images/goods_img/20230803/3444224/3444224_16910523200137_500.jpg",
+      "item": "Drop set male side hair press down perm",
+      "price": "$35",
+      "category": "beauty",
+      "brand": "FB"
+    },
+    {
+      "id": "7",
+      "image": "https://image.msscdn.net/images/prd_img/20220816/2719616/detail_2719616_1_500.jpg",
+      "item": "(FW22) T-Logo Cap Beige",
+      "price": "$44",
+      "category": "accessory",
+      "brand": "thisisneverthat®"
+    },
+    {
+      "id": "8",
+      "image": "https://image.msscdn.net/images/goods_img/20230131/3051146/3051146_16817863938476_500.jpg",
+      "item": "CGP origin tiger logo ball cap_3color",
+      "price": "$32",
+      "category": "accessory",
+      "brand": "CODEGRAPHY"
+    },
+    {
+      "id": "9",
+      "image": "https://image.msscdn.net/images/goods_img/20231002/3600148/3600148_16965046229088_500.jpg",
+      "item": "Gosia Ankle Boots (Long Boot Cover) - Black",
+      "price": "$302",
+      "category": "shoes",
+      "brand": "THEN"
+    },
+    {
+      "id": "10",
+      "image": "https://image.msscdn.net/images/goods_img/20230327/3180840/3180840_16844824715289_500.jpg",
+      "item": "Common V10 mesh sneakers - White: Nautico / VX0101380",
+      "price": "$173",
+      "category": "shoes",
+      "brand": "VEJA"
+    },
+    {
+      "id": "11",
+      "image": "https://image.msscdn.net/images/goods_img/20230823/3489625/3489625_16935422589394_500.jpg",
+      "item": "[Draw Fit X Kang Stylist] Hobo Leather Cross Bag [DARK BROWN]",
+      "price": "$66",
+      "category": "bag",
+      "brand": "DRAWFIT"
+    },
+    {
+      "id": "12",
+      "image": "https://image.msscdn.net/images/goods_img/20230818/3474455/3474455_16941514486946_500.jpg",
+      "item": "Chubby Bag Combi · Chubby Bag Combi",
+      "price": "$129",
+      "category": "bag",
+      "brand": "STAND OIL"
+    },
+    {
+      "id": "13",
+      "image": "https://image.msscdn.net/images/goods_img/20230324/3177624/3177624_16796323673705_500.png",
+      "item": "Vegan Ecofriendly Color Lipbalm from Jeju Sunrise",
+      "price": "$16",
+      "category": "beauty",
+      "brand": "LANUEE"
+    },
+    {
+      "id": "14",
+      "image": "https://image.msscdn.net/images/goods_img/20230830/3512849/3512849_16956191029228_500.jpg",
+      "item": "RUSSELL PLAID MINI SKIRT (BROWN PLAID)",
+      "price": "$121",
+      "category": "skirt",
+      "brand": "GLOWNY"
+    },
+    {
+      "id": "15",
+      "image": "https://image.msscdn.net/images/goods_img/20210909/2121052/2121052_1_500.jpg",
+      "item": "SGC Pleats Skirt_Brown",
+      "price": "$170",
+      "category": "skirt",
+      "brand": "SOCIAL GREEN CLUB"
+    }
+  ]
+}

@@ -10,6 +10,12 @@ const headerText = ['Enjoy 20% off on all orders $200+ | MONSTER20', 'FREE SHIPP
 //         }
 //     }
 
+//     componentDidMount() {
+//         setTimeout(() => {
+
+//         }, 3000)
+//     }
+
 //     render() {
 //         return(
 //             <div className='Navslider'>
