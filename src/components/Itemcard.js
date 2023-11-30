@@ -12,23 +12,16 @@ export default class ItemCard extends React.Component {
         console.log(item)
 
         return (
-            <>
-                <Routes>
-
-                    <Route path='/:itemId'
-                        render={(props) => <Itemdetail {...props} props={item} />} />
-                </Routes>
-                <div className="itemresult">
-                    <Link to={`/${item.id}`} onClick={() => {window.scroll(0, 0);}}>
-                        <div className="itemimg">
-                            <img src={item.image} />
-                        </div>
-                        <div className="itembrand">{item.brand}</div>
-                        <div>{item.item}</div>
-                        <div className="itemprice">{item.price}</div>
-                    </Link>
-                </div>
-            </>
+            <div className="itemresult">
+                <Link item={item} to={`/${item.id}`}>
+                    <div className="itemimg">
+                        <img src={item.image} />
+                    </div>
+                    <div className="itembrand">{item.brand}</div>
+                    <div>{item.item}</div>
+                    <div className="itemprice">{item.price}</div>
+                </Link>
+            </div>
         )
     }
 }
