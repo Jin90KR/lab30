@@ -34,27 +34,27 @@ class Itemdetail extends React.Component {
         console.log(productData)
 
         return (
-            <div className="itemdetail">
-                <div className="itemimgs">
-                    <img src='https://image.msscdn.net/images/goods_img/20210906/2112059/2112059_1_500.jpg' />
-                </div>
+            <div >
                 {productData ?
-                    <div className="detailbox">
-                        <div className="detailbrand">{productData.brand}</div>
-                        <div className="detailname">{productData.item}</div>
-                        <div className="ditailprice">{productData.price}</div>
-                        <div className="itembuttons">
-                            <button className="addtobag">ADD TO BAG</button>
-                            <div className="buttons">
-                                <button className="addtowishlist">Add To Wishlist</button>
-                                <button className="share">Share</button>
+                    <div className="itemdetail">
+                        <div className="itemimgs">
+                            <img src={productData.image} />
+                        </div>
+                        <div className="detailbox">
+                            <div className="detailbrand">{productData.brand}</div>
+                            <div className="detailname">{productData.item}</div>
+                            <div className="ditailprice">{productData.price}</div>
+                            <div className="itembuttons">
+                                <button className="addtobag">ADD TO BAG</button>
+                                <div className="buttons">
+                                    <button className="addtowishlist">Add To Wishlist</button>
+                                    <button className="share">Share</button>
+                                </div>
                             </div>
                         </div>
                     </div> :
                     <div>No item</div>
                 }
-
-
             </div >
         )
     }
