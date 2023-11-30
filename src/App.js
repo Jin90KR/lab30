@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Monster from './pages/Monster';
 import Itemdetail from './pages/Itemdetail';
+import Cart from './pages/Cart';
 
 function App() {
   return (

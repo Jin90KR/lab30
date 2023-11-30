@@ -7,6 +7,7 @@ import ItemCard from '../components/Itemcard';
 class Itemdetail extends React.Component {
     constructor() {
         super()
+
         this.state = {
             data: [],
         }
@@ -32,6 +33,7 @@ class Itemdetail extends React.Component {
         console.log(data)
         const productData = data.find((prod) => prod.id == params.itemId)
         console.log(productData)
+
 
         return (
             <div >
@@ -59,8 +61,6 @@ class Itemdetail extends React.Component {
         )
     }
 }
-
-
 
 export default () => (
     <Itemdetail params={useParams()} />

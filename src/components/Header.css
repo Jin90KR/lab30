@@ -1,5 +1,4 @@
-
-.navbar-icons{
+.navbar-icons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,38 +12,49 @@
     z-index: 1;
     cursor: pointer;
 }
-.logo a{
+
+.logo a {
     text-decoration: none;
     color: black;
 }
 
-.icon{
+.icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position:relative;
+    position: relative;
     flex: 1 1 0%;
     height: 100%;
     color: rgb(189, 189, 189)
 }
 
-.icon:hover{
+.icon:hover {
     color: black;
 }
 
-.icon span{
+.icon span {
     font-size: 13px;
 }
 
-.icon-person a{
+.icon-person a,
+.icon-bag a,
+.icon-heart a {
     color: black;
 }
 
-@keyframes fadeIn { from { opacity:0;} to { opacity:1; } }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .fade-in {
-    opacity:0;
+    opacity: 0;
     animation: fadeIn linear 1;
     animation-fill-mode: forwards;
     animation-duration: 0.7s;

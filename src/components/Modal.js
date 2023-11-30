@@ -22,7 +22,7 @@ class Modal extends React.Component {
         fetch('http://localhost:3000/items')
           .then(response => response.json())
           .then(things => {
-            console.log(things)
+            
             this.setState(
               () => ({
                 items: things

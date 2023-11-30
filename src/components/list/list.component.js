@@ -4,7 +4,7 @@ class List extends React.Component {
 
     render() {
         const { itemsList } = this.props
-        console.log(itemsList[0])
+        
 
         return (
             <div>
