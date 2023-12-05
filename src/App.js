@@ -16,11 +16,12 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>;
         <Route index element={<Home />} />;
-        <Route path='/:itemId' element={<Itemdetail />} />;
+        <Route path='/:itemId' element={<Itemdetail  />} />;
         <Route path='/about' element={<About />} />;
         <Route path='/monstersale' element={<Monster />} />;
         <Route path='/brands' element={<Brands />} />;
         <Route path='/login' element={<Login />} />;
+        <Route path='/cart' element={<Cart />} />;
         <Route path='/contact' element={<Contact />} />;
       </Route>
     </Routes>

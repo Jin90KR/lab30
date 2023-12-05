@@ -1,7 +1,9 @@
 import React from 'react';
 import './Itemdetail.css'
 import { useParams } from 'react-router-dom';
-import ItemCard from '../components/Itemcard';
+import { connect } from "react-redux";
+import { addToCart } from "../store/actions";
+import withRouter from '../components/routes/withRouter';
 
 
 class Itemdetail extends React.Component {
@@ -14,25 +16,39 @@ class Itemdetail extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3000/items/')
+        fetch(`http://localhost:3000/items/${this.props.router.params.itemId}`)
             .then(response => response.json())
             .then(jsonData => {
                 this.setState({ data: jsonData });
-                console.log(this.state.data)
             })
 
 
         return () => console.log('cleaned')
     }
 
+    addToCart = (e) => {
+        if( this.props.cartList === true){
+            if(cartListDetail.item.id === this.state.data.id && cartListDetail >= 1) {
+                return cartListDetail.itemQuantity += 1
+            }
+        
+        }
+
+        const cartListDetail = {
+            item : this.state.data,
+            itemQuantity : 1
+        }
+        console.log(this.state.data)
+
+        this.props.addToCart(cartListDetail);
+    }
+
     render() {
         const { params } = this.props;
-        const { data } = this.state;
-
-        console.log(params)
-        console.log(data)
-        const productData = data.find((prod) => prod.id == params.itemId)
+        const { data: productData } = this.state;
+        
         console.log(productData)
+        console.log(this.props.cartList)
 
 
         return (
@@ -47,7 +63,7 @@ class Itemdetail extends React.Component {
                             <div className="detailname">{productData.item}</div>
                             <div className="ditailprice">{productData.price}</div>
                             <div className="itembuttons">
-                                <button className="addtobag">ADD TO BAG</button>
+                                <button className="addtobag" onClick={this.addToCart}>ADD TO BAG</button>
                                 <div className="buttons">
                                     <button className="addtowishlist">Add To Wishlist</button>
                                     <button className="share">Share</button>
@@ -62,6 +78,23 @@ class Itemdetail extends React.Component {
     }
 }
 
-export default () => (
-    <Itemdetail params={useParams()} />
-)
+const mapStateToProps = (state) => {
+    // Add logic here..
+     return {
+       cartList: state.cartList,
+     };
+   };
+   
+   
+   const mapDispatchToProps = (dispatch) => {
+    // Add logic here..
+     return {
+       addToCart: (product) => dispatch(addToCart(product)),
+     };
+   };
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Itemdetail));
+// export default () => (
+//     <Itemdetail params={useParams()} />
+// )

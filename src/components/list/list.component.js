@@ -5,15 +5,14 @@ class List extends React.Component {
     render() {
         const { itemsList } = this.props
         
-
         return (
             <div>
                 <p>Brands<br /><br /></p>
                 {
                     itemsList.map((item) => {
                         return (
-                            <div key={item.id} className="itemresult">
-                                <div>{item.brand}</div>
+                            <div className="itemresult">
+                                <div key={item.id}>{item.brand}</div>
                             </div>
                         )
                     })
@@ -23,8 +22,8 @@ class List extends React.Component {
                 {
                     itemsList.map((item) => {
                         return (
-                            <div key={`items${item.id}`} className="itemresult">
-                                <div>{item.item}</div>
+                            <div className="itemresult">
+                                <div key={item.id}>{item.item}</div>
                             </div>
                         )
                     })

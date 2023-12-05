@@ -43,6 +43,23 @@
     color: black;
 }
 
+
+
+.cart-count{
+    position: absolute;
+    top: 26px;
+    right: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -59,3 +76,10 @@
     animation-fill-mode: forwards;
     animation-duration: 0.7s;
 }
+
+@media screen and (max-width: 1250px) {
+
+    .cart-count{
+        right: 20px;
+    }
+  }

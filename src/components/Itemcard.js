@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom"
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Itemdetail from "../pages/Itemdetail";
-
+import '../pages/Home.css'
 
 
 
