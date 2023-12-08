@@ -12,14 +12,13 @@ class Cart extends React.Component {
         }
     }
 
-    removeFromCart = (e) => {
-        console.log(e)
-        this.props.removeFromCart(e);
+    removeFromCartListFromPage = (e) => {
+        // console.log(this)
+        this.props.cartList.find((item) => this.props.removeFromCart(item))
+        // this.props.removeFromCart(e);
     }
 
     render() {
-        console.log(this.props)
-        console.log(this.item)
         
         return (
             <>
@@ -66,7 +65,7 @@ class Cart extends React.Component {
                                                     <div className="itemqty"></div>
                                                     <div className="cart-buttons">
                                                         <button>Move to Wishlist</button>
-                                                        <button onClick={this.removeFromCart(item)}>Remove</button>
+                                                        <button onClick={this.removeFromCartListFromPage}>Remove</button>
                                                     </div>
                                                 </div>
 
