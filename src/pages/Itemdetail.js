@@ -28,7 +28,7 @@ class Itemdetail extends React.Component {
     //     return () => console.log('cleaned')
     // }
 
-    addToCart = (e) => {
+    addToCartFromPage = (e) => {
         this.props.addToCart(this.props.router.params.itemId);
     };
 
@@ -66,7 +66,7 @@ class Itemdetail extends React.Component {
                             </div>
                             <div className="ditailprice">{productData.price}</div>
                             <div className="itembuttons">
-                                <button className="addtobag" onClick={this.addToCart}>ADD TO BAG</button>
+                                <button className="addtobag" onClick={this.addToCartFromPage}>ADD TO BAG</button>
                                 <div className="buttons">
                                     <button className="addtowishlist">Add To Wishlist</button>
                                     <button className="share">Share</button>
