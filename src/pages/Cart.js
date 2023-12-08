@@ -13,13 +13,13 @@ class Cart extends React.Component {
     }
 
     removeFromCart = (e) => {
-        console.log(this.props.cartList)
-        const newList = this.props.cartList.filter(x => x.id !== this.state.id)
-
-        this.props.removeFromCart(newList);
+        console.log(e)
+        this.props.removeFromCart(e);
     }
 
     render() {
+        console.log(this.props)
+        console.log(this.item)
         
         return (
             <>
@@ -66,7 +66,7 @@ class Cart extends React.Component {
                                                     <div className="itemqty"></div>
                                                     <div className="cart-buttons">
                                                         <button>Move to Wishlist</button>
-                                                        <button onClick={this.removeFromCart}>Remove</button>
+                                                        <button onClick={this.removeFromCart(item)}>Remove</button>
                                                     </div>
                                                 </div>
 
@@ -93,7 +93,7 @@ class Cart extends React.Component {
 const mapStateToProps = (state) => {
     // Add logic here..
     return {
-        cartList: state.cartList,
+        cartList: state.items.cartList
     };
 };
 
@@ -104,4 +104,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-export default connect(mapStateToProps, null)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

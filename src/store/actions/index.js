@@ -39,23 +39,24 @@ export const addToCart = (product) => {
 };
 
 export const removeFromCart = (item) => {
+  console.log(item)
   return {
     type: REMOVE_CART,
     payload: item,
   }
 }
 
-export const increaseNum = (quantity) => {
-  return {
-    type: INCREASE_NUM,
-    payload: quantity,
-  }
-}
+// export const increaseNum = (quantity) => {
+//   return {
+//     type: INCREASE_NUM,
+//     payload: quantity,
+//   }
+// }
 
-export const decreaseNum = (quantity) => {
-  return {
-    type: DECREASE_NUM,
-    payload: quantity,
-  }
-}
+// export const decreaseNum = (quantity) => {
+//   return {
+//     type: DECREASE_NUM,
+//     payload: quantity,
+//   }
+// }
 

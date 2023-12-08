@@ -14,7 +14,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className="footer-top">
-                <p><Link to={About}>About MUJINJANG</Link></p>
+                <p><Link to={About}>About 졸업 프로젝트</Link></p>
                 <p><Link to={Terms}>Terms & Conditions</Link></p>
                 <p><Link to={Policy}>Privacy Policy</Link></p>
             </div>
@@ -25,7 +25,7 @@ function Footer() {
             </div>
 
             <div className="download-app">
-                <p className="download-text">Download the MUJINJANG app</p>
+                <p className="download-text">Download the 졸업프로젝트 app</p>
                 <div className="apps" >
                     <div className="app-store">
                         <FaApple />
@@ -57,11 +57,11 @@ function Footer() {
             </div>
 
             <button className="footer-about">
-                Learn more about MUJINJANG Co.,Ltd.
+                Learn more about 졸업프로젝트 Co.,Ltd.
                 <div className="uparrow"><IoIosArrowUp /></div>
             </button>
 
-            <p className="footer-last">MUJINJANG Co.,Ltd may not be the direct seller but only an intermediary for some products. In this case, MUJINJANG has limited liability for products, information, and transactions. Please check the product details page of each product.</p>
+            <p className="footer-last">졸업프로젝트 Co.,Ltd may not be the direct seller but only an intermediary for some products. In this case, MUJINJANG has limited liability for products, information, and transactions. Please check the product details page of each product.</p>
         </footer>
     );
 };

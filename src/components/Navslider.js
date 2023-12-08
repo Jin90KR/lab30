@@ -1,29 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const headerText = ['Enjoy 20% off on all orders $200+ | MONSTER20', 'FREE SHIPPING on all orders $200+', 'Enjoy 15% off your first order | Use code WLCM15'];
-
-// class Navslider extends React.Component {
-//     constructor() {
-//         super();
-//         this.state = {
-
-//         }
-//     }
-
-//     componentDidMount() {
-//         setTimeout(() => {
-
-//         }, 3000)
-//     }
-
-//     render() {
-//         return(
-//             <div className='Navslider'>
-
-//             </div>
-//         )
-//     }
-// }
+const headerText = ['가입하고 10% 할인받기', '특별 크리스마스 세일 | Use code 23CM', '만원이상 주문시 배달비 무료'];
 
 const NavSlider = () => {
     const [current, setCurrent] = useState(0);

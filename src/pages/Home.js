@@ -19,17 +19,7 @@ class Home extends React.Component {
 
 
     componentDidMount() {
-        this.props.getItems();
-        // fetch('http://localhost:3000/items')
-        //     .then(response => response.json())
-        //     .then(things => {
-        //         console.log(things)
-        //         this.setState(
-        //             () => ({
-        //                 items: things
-        //             })
-        //         );
-        //     })
+        this.props.getItems()
     }
 
     render() {

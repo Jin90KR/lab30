@@ -64,12 +64,11 @@ class Modal extends React.Component {
 
                     <div className='modal-mid'>
                         <div className='modal-sale'>
-                            <p>Search Monster sale</p>
+                            <p>Search Christmas sale</p>
                             <ol>
                                 <li>Brand Day</li>
                                 <li>Special Offers</li>
                                 <li>72H Flash Sale</li>
-                                <li>Forward K-Brands</li>
                             </ol>
                         </div>
                         <div className='modal-searchresult'>

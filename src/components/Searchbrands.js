@@ -9,16 +9,16 @@ class Searchbrands extends React.Component {
             <div className='modal-brands'>
                 <p>Most Searched Brands</p>
                 <ol>
-                    <li>1 thisisneverthat®</li>
-                    <li>2 MATIN KIM</li>
-                    <li>3 MARDI MERCREDI</li>
-                    <li>4 MUSINSA STANDARD</li>
-                    <li>5 MAHAGRID</li>
-                    <li>6 GLOWNY</li>
-                    <li>7 CODEGRAPHY</li>
-                    <li>8 DRAWFIT</li>
-                    <li>9 INSILENCE</li>
-                    <li>10 PHYPS</li>
+                    <li>1 미펫</li>
+                    <li>2 알켐 바이오</li>
+                    <li>3 닥터바이</li>
+                    <li>4 에이앤바이오</li>
+                    <li>5 케어사이드</li>
+                    <li>6 광동제약</li>
+                    <li>7 포켄스</li>
+                    <li>8 아이앤지메딕스</li>
+                    <li>9 웰케어</li>
+                    <li>10 벨벳</li>
                 </ol>
             </div>
         );

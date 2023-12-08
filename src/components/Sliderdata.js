@@ -1,34 +1,34 @@
 export const SliderData = [
   {
     image:
-      'https://image.msscdn.net/global/images/2023/11/06/96485aee74ca4aa7a8a67e2f3fb58075.jpeg',
+      'https://images.unsplash.com/photo-1581888227599-779811939961?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     btext:
-      'Loco [WEAK] x thisisneverthat®',
+      '지금 회원 가입시 신규회원 쿠폰 지급',
     stext:
-      'Introducing the merchandise for Loco’s studio album [WEAK], designed in collaboration with thisisneverthat®.',
+      '',
   },
   {
     image:
-      'https://image.msscdn.net/global/images/2023/11/13/43832f7ae36a4f86b526d664625e0a50.jpeg',
+      'https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     btext:
-      'Cold Weather Edit',
+      '건강한 반려견을 위한 영양제',
     stext:
-      "Don't miss out on the latest outerwear trends and our editor's top picks.",
+      "",
   },
   {
     image:
-      'https://image.msscdn.net/global/images/2023/11/15/812226c1ebc44166b959c0b4984cef56.jpeg',
+      'https://images.unsplash.com/photo-1516222338250-863216ce01ea?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     btext:
-      'MONSTER SALE COMING SOON',
+      '크리스마스 SALE COMING SOON',
     stext:
-      'The Monster Sale is about to start. Check out the 3X Point Event for Early Access and other exciting promotions now!',
+      'Christmas Sale is about to start. Check out the 3X Point Event for Early Access and other exciting promotions now!',
   },
   {
     image:
-      'https://image.msscdn.net/global/images/2023/11/13/0a56a5e4f04e4191b020afea073c8bc1.jpeg',
+      'https://images.unsplash.com/photo-1530115844297-e1629f09ad00?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     btext:
-      '[INSILENCE] Is On',
+      '노견들을 위한 영양제',
     stext:
-      'Only for 3 days! Enjoy up to 50% off and an additional 20% off special promo code.',
+      '기운을 북돋아 주는 고품격 노령견 영양제',
   }
 ];

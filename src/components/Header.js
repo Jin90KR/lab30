@@ -16,8 +16,7 @@ import { connect } from "react-redux";
 class Header extends React.Component{
     
     render(){
-        const menuItem = ['MONSTER SALE', 'BRANDS', 'BEST SELLERS', 'NEW IN', 'CLOTHING', 'SHOES', 'BAGS', 'BEAUTY', 'ACCESSORIES'];
-        const headerText = ['Enjoy 20% off on all orders $200+ | MONSTER20', 'FREE SHIPPING on all orders $200+', 'Enjoy 15% off your first order | Use code WLCM15'];
+        const menuItem = ['강아지 간식', '강아지 영양제', '강아지 용품', '브랜드 스토리', '고객 리뷰', '커뮤니티'];
 
         return (
             <header className='header'>
@@ -28,7 +27,7 @@ class Header extends React.Component{
                             
                         </div>
                         <div className="logo">
-                            <p><Link to='/'>MUJINJANG</Link></p>
+                            <p><Link to='/'>졸업 프로젝트</Link></p>
                         </div>
                         <div className="top-icons">
                             <div className="icon-heart"><VscHeart /></div>

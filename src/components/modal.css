@@ -137,6 +137,7 @@
 
 .modal-searchresult {
     position: relative;
+    display: none;
 }
 
 .modal-searchresult::before {

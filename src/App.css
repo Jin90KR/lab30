@@ -45,6 +45,7 @@
 
 .header-nav{
   display: flex;
+  justify-content: center;
   flex-direction: row;
   list-style: none;
   padding: 20px 20px;
@@ -242,7 +243,7 @@
 .main-big-text{
   width: 530px;
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .main-small-text{

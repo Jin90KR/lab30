@@ -6,6 +6,7 @@ import { addToCart } from "../store/actions";
 import withRouter from '../components/routes/withRouter';
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowUp } from "react-icons/sl";
+import { FaThemeisle } from 'react-icons/fa';
 
 
 class Itemdetail extends React.Component {
@@ -28,8 +29,7 @@ class Itemdetail extends React.Component {
     // }
 
     addToCart = (e) => {
-
-        this.props.addToCart(this.state.data);
+        this.props.addToCart(this.props.router.params.itemId);
     };
 
     increaseNum = (quantity) => {
@@ -45,8 +45,7 @@ class Itemdetail extends React.Component {
     render() {
         const paramsId = this.props.router.params.itemId;
         const productData = this.props.itemList.find((prod) => prod.id == paramsId)
-
-        console.log(this.props.itemList.id)
+        console.log(this.props.router.params.itemId)
         
 
 
