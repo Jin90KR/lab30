@@ -1,1 +1,8 @@
 export const ADD_CART = "ADD_CART";
+export const REMOVE_CART = "REMOVE_CART";
+export const INCREASE_NUM = "INCREASE_NUM";
+export const DECREASE_NUM = "DECREASE_NUM";
+
+export const GET_ITEMS_INITIATED = 'GET_ITEMS_INITIATED';
+export const GET_ITEMS_SUCCESS = 'GET_ITEMS_SUCCESS';
+export const GET_ITEMS_FAILURE = 'GET_ITEMS_FAILURE';

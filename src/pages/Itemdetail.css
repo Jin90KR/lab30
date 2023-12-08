@@ -62,3 +62,14 @@
     cursor: pointer;
     font-size: 15px;
 }
+
+.detailQty{
+    display: flex;
+    align-items: center;
+}
+
+.detailQty button{
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+}

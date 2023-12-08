@@ -84,7 +84,7 @@ class Header extends React.Component{
 const mapStateToProps = (state) => {
     // Add logic here..
      return {
-        cartList: state.cartList,
+        cartList: state.items.cartList,
      };
    };
 

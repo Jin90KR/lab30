@@ -5,32 +5,35 @@ import './Home.css'
 import Itemdetail from "./Itemdetail";
 import { NavLink, Link } from "react-router-dom";
 import ItemCard from "../components/Itemcard";
+import { connect } from "react-redux";
+import { getItems } from "../store/actions";
 
 
 class Home extends React.Component {
     constructor() {
         super();
         this.state = {
-            items: [],
 
         };
     }
 
 
     componentDidMount() {
-        fetch('http://localhost:3000/items')
-            .then(response => response.json())
-            .then(things => {
-                console.log(things)
-                this.setState(
-                    () => ({
-                        items: things
-                    })
-                );
-            })
+        this.props.getItems();
+        // fetch('http://localhost:3000/items')
+        //     .then(response => response.json())
+        //     .then(things => {
+        //         console.log(things)
+        //         this.setState(
+        //             () => ({
+        //                 items: things
+        //             })
+        //         );
+        //     })
     }
 
     render() {
+        
 
         return (
             <>
@@ -44,9 +47,9 @@ class Home extends React.Component {
                     <p className="main-text">BEST SELLERS</p>
                     <div className="bestsellers">
                         {
-                            this.state.items.map(item => {
+                            this.props.items.map(item => {
                                 return (
-                                    <ItemCard key={item.id} item={ item } />
+                                    <ItemCard key={item.id} item={item} />
                                     // <div className="itemresult"><Link item={item} to={`/${item.id}`}>
                                     //     <div className="itemimg" key={item.id}>
                                     //         <img src={item.image} />
@@ -69,4 +72,20 @@ class Home extends React.Component {
 }
 
 
-export default Home;
+const mapStateToProps = (state) => {
+    // Add logic here.. 
+
+    return {
+        items: state.items.itemList,
+    };
+};
+
+const mapDispatchToProps = (dispatch) => {
+    // Add logic here..
+    return {
+        getItems: () => dispatch(getItems()),
+        
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

@@ -9,7 +9,6 @@ import '../pages/Home.css'
 export default class ItemCard extends React.Component {
     render() {
         const { item } = this.props
-        console.log(item)
 
         return (
             <div className="itemresult">

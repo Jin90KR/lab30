@@ -6,7 +6,8 @@
       "item": "SINGLE PLEATED WIDE SWEATPANTS GRAY",
       "price": "$48",
       "category": "pants",
-      "brand": "GAKKAI UNIONS"
+      "brand": "GAKKAI UNIONS",
+      "quantity": 1
     },
     {
       "id": "2",
@@ -14,7 +15,8 @@
       "item": "One tuck parachute cargo denim pants_grey",
       "price": "$38",
       "category": "pants",
-      "brand": "DIMITRI BLACK"
+      "brand": "DIMITRI BLACK",
+      "quantity": 1
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "item": "Vintage Half Zip Up_Navy",
       "price": "$66",
       "category": "top",
-      "brand": "1993STUDIO"
+      "brand": "1993STUDIO",
+      "quantity": 1
     },
     {
       "id": "4",
@@ -30,7 +33,8 @@
       "item": "LEATHER RIDER JK (NAVY)",
       "price": "$329",
       "category": "top",
-      "brand": "WKNDRS"
+      "brand": "WKNDRS",
+      "quantity": 1
     },
     {
       "id": "5",
@@ -38,7 +42,8 @@
       "item": "LONELY/LOVELY FLUFF HOODIE GRAY",
       "price": "$133",
       "category": "top",
-      "brand": "NOHANT"
+      "brand": "NOHANT",
+      "quantity": 1
     },
     {
       "id": "6",
@@ -46,7 +51,8 @@
       "item": "Drop set male side hair press down perm",
       "price": "$35",
       "category": "beauty",
-      "brand": "FB"
+      "brand": "FB",
+      "quantity": 1
     },
     {
       "id": "7",
@@ -54,7 +60,8 @@
       "item": "(FW22) T-Logo Cap Beige",
       "price": "$44",
       "category": "accessory",
-      "brand": "thisisneverthat®"
+      "brand": "thisisneverthat®",
+      "quantity": 1
     },
     {
       "id": "8",
@@ -62,7 +69,8 @@
       "item": "CGP origin tiger logo ball cap_3color",
       "price": "$32",
       "category": "accessory",
-      "brand": "CODEGRAPHY"
+      "brand": "CODEGRAPHY",
+      "quantity": 1
     },
     {
       "id": "9",
@@ -70,7 +78,8 @@
       "item": "Gosia Ankle Boots (Long Boot Cover) - Black",
       "price": "$302",
       "category": "shoes",
-      "brand": "THEN"
+      "brand": "THEN",
+      "quantity": 1
     },
     {
       "id": "10",
@@ -78,7 +87,8 @@
       "item": "Common V10 mesh sneakers - White: Nautico / VX0101380",
       "price": "$173",
       "category": "shoes",
-      "brand": "VEJA"
+      "brand": "VEJA",
+      "quantity": 1
     },
     {
       "id": "11",
@@ -86,7 +96,8 @@
       "item": "[Draw Fit X Kang Stylist] Hobo Leather Cross Bag [DARK BROWN]",
       "price": "$66",
       "category": "bag",
-      "brand": "DRAWFIT"
+      "brand": "DRAWFIT",
+      "quantity": 1
     },
     {
       "id": "12",
@@ -94,7 +105,8 @@
       "item": "Chubby Bag Combi · Chubby Bag Combi",
       "price": "$129",
       "category": "bag",
-      "brand": "STAND OIL"
+      "brand": "STAND OIL",
+      "quantity": 1
     },
     {
       "id": "13",
@@ -102,7 +114,8 @@
       "item": "Vegan Ecofriendly Color Lipbalm from Jeju Sunrise",
       "price": "$16",
       "category": "beauty",
-      "brand": "LANUEE"
+      "brand": "LANUEE",
+      "quantity": 1
     },
     {
       "id": "14",
@@ -110,7 +123,8 @@
       "item": "RUSSELL PLAID MINI SKIRT (BROWN PLAID)",
       "price": "$121",
       "category": "skirt",
-      "brand": "GLOWNY"
+      "brand": "GLOWNY",
+      "quantity": 1
     },
     {
       "id": "15",
@@ -118,7 +132,8 @@
       "item": "SGC Pleats Skirt_Brown",
       "price": "$170",
       "category": "skirt",
-      "brand": "SOCIAL GREEN CLUB"
+      "brand": "SOCIAL GREEN CLUB",
+      "quantity": 1
     }
   ]
 }

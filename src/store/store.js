@@ -5,7 +5,7 @@ import { cartReducer } from './reducers/cartReducer';
 // 해당 링크에서 확인: https://redux.js.org/usage/configuring-your-store#problems-with-this-approach 
 export default configureStore({
   reducer: {
-    cartList: cartReducer,
+    items: cartReducer,
   },
 });
 

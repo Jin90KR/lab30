@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import { connect } from "react-redux";
 import { addToCart } from "../store/actions";
 import withRouter from '../components/routes/withRouter';
+import { SlArrowDown } from "react-icons/sl";
+import { SlArrowUp } from "react-icons/sl";
 
 
 class Itemdetail extends React.Component {
@@ -11,44 +13,41 @@ class Itemdetail extends React.Component {
         super()
 
         this.state = {
-            data: [],
         }
     }
 
-    componentDidMount() {
-        fetch(`http://localhost:3000/items/${this.props.router.params.itemId}`)
-            .then(response => response.json())
-            .then(jsonData => {
-                this.setState({ data: jsonData });
-            })
+    // componentDidMount() {
+    //     fetch(`http://localhost:3000/items/${this.props.router.params.itemId}`)
+    //         .then(response => response.json())
+    //         .then(jsonData => {
+    //             this.setState({ data: jsonData });
+    //         })
 
 
-        return () => console.log('cleaned')
-    }
+    //     return () => console.log('cleaned')
+    // }
 
     addToCart = (e) => {
-        if( this.props.cartList === true){
-            if(cartListDetail.item.id === this.state.data.id && cartListDetail >= 1) {
-                return cartListDetail.itemQuantity += 1
-            }
-        
-        }
 
-        const cartListDetail = {
-            item : this.state.data,
-            itemQuantity : 1
-        }
-        console.log(this.state.data)
+        this.props.addToCart(this.state.data);
+    };
 
-        this.props.addToCart(cartListDetail);
-    }
+    increaseNum = (quantity) => {
+        this.props.increaseNum(quantity)
+    };
+
+
+    decreaseNum = (quantity) => {
+        this.props.decreaseNum(quantity)
+    };
+
 
     render() {
-        const { params } = this.props;
-        const { data: productData } = this.state;
+        const paramsId = this.props.router.params.itemId;
+        const productData = this.props.itemList.find((prod) => prod.id == paramsId)
+
+        console.log(this.props.itemList.id)
         
-        console.log(productData)
-        console.log(this.props.cartList)
 
 
         return (
@@ -61,6 +60,11 @@ class Itemdetail extends React.Component {
                         <div className="detailbox">
                             <div className="detailbrand">{productData.brand}</div>
                             <div className="detailname">{productData.item}</div>
+                            <div className='detailQty'>
+                                <button onClick={this.increaseNum}><SlArrowUp /></button>
+                                <div>{productData.quantity}</div>
+                                <button onClick={this.decreaseNum}><SlArrowDown /></button>
+                            </div>
                             <div className="ditailprice">{productData.price}</div>
                             <div className="itembuttons">
                                 <button className="addtobag" onClick={this.addToCart}>ADD TO BAG</button>
@@ -80,21 +84,22 @@ class Itemdetail extends React.Component {
 
 const mapStateToProps = (state) => {
     // Add logic here..
-     return {
-       cartList: state.cartList,
-     };
-   };
-   
-   
-   const mapDispatchToProps = (dispatch) => {
+    return {
+        itemList: state.items.itemList,
+        cartList: state.items.cartList,
+    };
+};
+
+
+const mapDispatchToProps = (dispatch) => {
     // Add logic here..
-     return {
-       addToCart: (product) => dispatch(addToCart(product)),
-     };
-   };
+    return {
+        addToCart: (product) => dispatch(addToCart(product)),
+        //    increaseNum: (quantity) => dispatch(increaseNum(quantity)),
+        //    decreaseNum: (quantity) => dispatch(decreaseNum(quantity)),
+    };
+};
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(Itemdetail));
-// export default () => (
-//     <Itemdetail params={useParams()} />
-// )
+

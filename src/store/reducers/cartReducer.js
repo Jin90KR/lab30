@@ -1,12 +1,24 @@
-import { ADD_CART } from "../actions/constants";
+import { ADD_CART, GET_ITEMS_SUCCESS } from "../actions/constants";
 
-const initialState = [];
+const initialState = {
+  itemList: [],
+  cartList: [],
+
+};
 
 export function cartReducer(state = initialState, action) {
- switch (action.type) {
+  switch (action.type) {
     case ADD_CART:
-        return [...state, action.payload];
-    
- }
+      return {
+        ...state, 
+        cartList: action.payload,
+      };
+    case GET_ITEMS_SUCCESS:
+      return {
+        ...state,
+        itemList: action.payload,
+      };
+
+  }
   return state;
 }
