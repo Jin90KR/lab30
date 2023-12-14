@@ -6,7 +6,7 @@ class Inputbox extends React.Component {
         const { handleChange } = this.props
         return (
             <div>
-                <input className='brandsearch' placeholder='Search Brands' onChange={handleChange} />
+                <input className='brandsearch' placeholder='Search' onChange={handleChange} />
             </div>
         )
     }

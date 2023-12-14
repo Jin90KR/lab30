@@ -2,8 +2,6 @@ import React from "react";
 import ImageSlider from '../components/Imageslider';
 import { SliderData } from "../components/Sliderdata";
 import './Home.css'
-import Itemdetail from "./Itemdetail";
-import { NavLink, Link } from "react-router-dom";
 import ItemCard from "../components/Itemcard";
 import { connect } from "react-redux";
 import { getItems } from "../store/actions";
@@ -22,6 +20,8 @@ class Home extends React.Component {
         this.props.getItems()
     }
 
+    
+
     render() {
         
 
@@ -38,8 +38,12 @@ class Home extends React.Component {
                     <div className="bestsellers">
                         {
                             this.props.items.map(item => {
-                                return (
-                                    <ItemCard key={item.id} item={item} />
+                                if(item.bestsellers === true){
+                                    return (
+                                        <ItemCard key={item.id} item={item} />
+                                    )
+                                }
+                                
                                     // <div className="itemresult"><Link item={item} to={`/${item.id}`}>
                                     //     <div className="itemimg" key={item.id}>
                                     //         <img src={item.image} />
@@ -48,7 +52,7 @@ class Home extends React.Component {
                                     //     <div key={item.id}>{item.item}</div>
                                     //     <div className="itemprice" key={item.id}>{item.price}</div>
                                     // </Link></div>
-                                )
+                                
                             })
                         }
                     </div>

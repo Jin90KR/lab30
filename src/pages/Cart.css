@@ -7,9 +7,6 @@
   margin-top: 50px;
 }
 
-.empty-cart{
-    display: none;
-}
 
 .maintext{
     font-size: 30px;
@@ -96,4 +93,13 @@
 .cart-price{
     font-size: 17px;
     color: rgb(165, 4, 4);
+}
+
+.totalprice{
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    font-size: 17px;
+    font-weight: bold;
+    color: black
 }

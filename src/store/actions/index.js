@@ -1,3 +1,4 @@
+import CartList from "../../components/CartList";
 import {
   ADD_CART,
   REMOVE_CART,
@@ -38,11 +39,10 @@ export const addToCart = (product) => {
   };
 };
 
-export const removeFromCart = (item) => {
-  console.log(item)
+export const removeFromCart = (items) => {
   return {
     type: REMOVE_CART,
-    payload: item,
+    payload: items,
   }
 }
 

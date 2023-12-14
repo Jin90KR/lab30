@@ -12,13 +12,13 @@ export default class ItemCard extends React.Component {
 
         return (
             <div className="itemresult">
-                <Link item={item} to={`/${item.id}`}>
+                <Link item={item} to={`/${item.id}`} className="item">
                     <div className="itemimg">
                         <img src={item.image} />
                     </div>
                     <div className="itembrand">{item.brand}</div>
                     <div>{item.item}</div>
-                    <div className="itemprice">{item.price}</div>
+                    <div className="itemprice">{item.price}원</div>
                 </Link>
             </div>
         )

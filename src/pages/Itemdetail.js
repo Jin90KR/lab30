@@ -28,18 +28,20 @@ class Itemdetail extends React.Component {
     //     return () => console.log('cleaned')
     // }
 
-    addToCart = (e) => {
+    addToCartFromPage = (e) => {
+        // console.log(this.props.router)
+        // const newItem = this.props.itemList.find((item) => item.id === this.props.router.params.itemId)
         this.props.addToCart(this.props.router.params.itemId);
     };
 
-    increaseNum = (quantity) => {
-        this.props.increaseNum(quantity)
-    };
+    // increaseNum = (quantity) => {
+    //     this.props.increaseNum(quantity)
+    // };
 
 
-    decreaseNum = (quantity) => {
-        this.props.decreaseNum(quantity)
-    };
+    // decreaseNum = (quantity) => {
+    //     this.props.decreaseNum(quantity)
+    // };
 
 
     render() {
@@ -66,7 +68,7 @@ class Itemdetail extends React.Component {
                             </div>
                             <div className="ditailprice">{productData.price}</div>
                             <div className="itembuttons">
-                                <button className="addtobag" onClick={this.addToCart}>ADD TO BAG</button>
+                                <button className="addtobag" onClick={this.addToCartFromPage}>ADD TO BAG</button>
                                 <div className="buttons">
                                     <button className="addtowishlist">Add To Wishlist</button>
                                     <button className="share">Share</button>

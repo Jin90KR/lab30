@@ -5,3 +5,9 @@
 .brandresult{
     margin-bottom: 10px;
 }
+
+.brand_link,
+.item_link{
+    text-decoration: none;
+    color: black;
+}
