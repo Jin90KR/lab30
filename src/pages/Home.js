@@ -17,12 +17,14 @@ class Home extends React.Component {
 
 
     componentDidMount() {
+        console.log('getItems')
         this.props.getItems()
     }
 
     
 
     render() {
+        console.log(this.props)
         
 
         return (
@@ -37,7 +39,7 @@ class Home extends React.Component {
                     <p className="main-text">BEST SELLERS</p>
                     <div className="bestsellers">
                         {
-                            this.props.items.map(item => {
+                            this.props.items.items.map(item => {
                                 if(item.bestsellers === true){
                                     return (
                                         <ItemCard key={item.id} item={item} />
@@ -70,7 +72,7 @@ const mapStateToProps = (state) => {
     // Add logic here.. 
 
     return {
-        items: state.items.itemList,
+        items: state.items
     };
 };
 

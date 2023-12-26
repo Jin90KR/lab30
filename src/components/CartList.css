@@ -1,0 +1,10 @@
+
+.orderqty{
+    display: flex;
+    gap: 5px;
+}
+
+.up,
+.down{
+    cursor: pointer;
+}

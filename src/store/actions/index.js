@@ -1,11 +1,11 @@
-import CartList from "../../components/CartList";
+
+
 import {
   ADD_CART,
   REMOVE_CART,
   INCREASE_NUM,
   DECREASE_NUM,
-  GET_ITEMS_FAILURE,
-  GET_ITEMS_INITIATED,
+
   GET_ITEMS_SUCCESS
 } from "./constants";
 
@@ -33,6 +33,7 @@ const getItemSuccess = (items) => ({
 
 
 export const addToCart = (product) => {
+  console.log(product)
   return {
     type: ADD_CART,
     payload: product,
@@ -46,17 +47,17 @@ export const removeFromCart = (items) => {
   }
 }
 
-// export const increaseNum = (quantity) => {
-//   return {
-//     type: INCREASE_NUM,
-//     payload: quantity,
-//   }
-// }
+export const increaseQty = (quantity) => {
+  return {
+    type: INCREASE_NUM,
+    payload: quantity,
+  }
+}
 
-// export const decreaseNum = (quantity) => {
-//   return {
-//     type: DECREASE_NUM,
-//     payload: quantity,
-//   }
-// }
+export const decreaseQty = (quantity) => {
+  return {
+    type: DECREASE_NUM,
+    payload: quantity,
+  }
+}
 

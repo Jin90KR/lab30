@@ -29,9 +29,19 @@ class Itemdetail extends React.Component {
     // }
 
     addToCartFromPage = (e) => {
-        // console.log(this.props.router)
+        console.log(this.props)
         // const newItem = this.props.itemList.find((item) => item.id === this.props.router.params.itemId)
-        this.props.addToCart(this.props.router.params.itemId);
+        const addedItem = this.props.items.find((item) => item.id === this.props.router.params.itemId)
+
+        const existedItem = this.props.cartList.find((item) => addedItem.id === item.id)
+        if (existedItem) {
+            console.log(existedItem)
+            console.log(this.props.cartList)
+            existedItem.quantity += 1
+        }else{
+            addedItem.quantity = 1;
+            this.props.addToCart(addedItem);
+        }
     };
 
     // increaseNum = (quantity) => {
@@ -46,7 +56,7 @@ class Itemdetail extends React.Component {
 
     render() {
         const paramsId = this.props.router.params.itemId;
-        const productData = this.props.itemList.find((prod) => prod.id == paramsId)
+        const productData = this.props.items.find((prod) => prod.id == paramsId)
         console.log(this.props.router.params.itemId)
         
 
@@ -86,8 +96,8 @@ class Itemdetail extends React.Component {
 const mapStateToProps = (state) => {
     // Add logic here..
     return {
-        itemList: state.items.itemList,
-        cartList: state.items.cartList,
+        items: state.items.items,
+        cartList: state.cartList,
     };
 };
 

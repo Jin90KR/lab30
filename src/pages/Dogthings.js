@@ -43,7 +43,7 @@ const mapStateToProps = (state) => {
     // Add logic here.. 
 
     return {
-        items: state.items.itemList,
+        items: state.items.items,
     };
 };
 

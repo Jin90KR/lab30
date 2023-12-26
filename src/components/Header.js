@@ -67,9 +67,11 @@ class Header extends React.Component {
                 link: 'community'
             }
         ];
+        console.log(this.props)
 
         return (
             <header className='header'>
+
                 <ModalSearch />
                 <div className="container">
                     <div className="header-top">
@@ -83,7 +85,7 @@ class Header extends React.Component {
                             <div className="icon-heart"><Link to='wishlist'><VscHeart /></Link></div>
                             <div className="icon-bag"><Link to='/cart'>
                                 <BiShoppingBag />
-                                <div className="cart-count">{this.props.cartList.length}</div>
+                                <div className="cart-count">{this.props.cartlist.length}</div>
                             </Link></div>
                             <div className="icon-person"><Link to='/login'><GoPerson /></Link></div>
                         </div>
@@ -95,6 +97,7 @@ class Header extends React.Component {
                         ))}
                     </nav>
                 </div>
+
 
                 <div className="adtext">
                     <NavSlider />
@@ -145,7 +148,8 @@ class Header extends React.Component {
 const mapStateToProps = (state) => {
     // Add logic here..
     return {
-        cartList: state.items.cartList,
+        items: state.items.items,
+        cartlist: state.cartList
     };
 };
 

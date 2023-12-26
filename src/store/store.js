@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { cartReducer } from './reducers/cartReducer';
+import { itemReducer } from './reducers/itemReducer';
 
 // configureStore는 기존에 우리가 코딩해서 넣어야 했던 것들을 다 대신 해준다!
 // 해당 링크에서 확인: https://redux.js.org/usage/configuring-your-store#problems-with-this-approach 
 export default configureStore({
   reducer: {
-    items: cartReducer,
+    cartList: cartReducer,
+    items: itemReducer
   },
 });
 

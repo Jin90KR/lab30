@@ -9,6 +9,7 @@
 }
 
 .modalbtn {
+    position:relative;
     z-index: 1;
 }
 
@@ -67,6 +68,9 @@
 }
 
 .searchbtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-190%);
     display: flex;
     flex-direction: row;
     align-items: center;

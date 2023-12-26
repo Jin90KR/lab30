@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { removeFromCart } from "../store/actions";
 import CartList from "../components/CartList";
 
+
 class Cart extends React.Component {
     constructor() {
         super()
@@ -18,6 +19,7 @@ class Cart extends React.Component {
     }
 
     render() {
+        console.log(this.props.cartList)
 
 
         return (
@@ -67,8 +69,8 @@ class Cart extends React.Component {
 const mapStateToProps = (state) => {
     // Add logic here..
     return {
-        cartList: state.items.cartList,
-        totalPrice: state.items.totalPrice
+        cartList: state.cartList,
+        items: state.items.items
     };
 };
 

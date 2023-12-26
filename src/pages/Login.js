@@ -13,8 +13,8 @@ class Login extends React.Component {
 
 
     render() {
-        const [email, setEmail] = useState('');
-        const [password, setPassword] = useState('');
+        // const [email, setEmail] = useState('');
+        // const [password, setPassword] = useState('');
 
         const loginGoogleUser = async() => {
             const result = await signInWithGooglePopup()
@@ -30,8 +30,8 @@ class Login extends React.Component {
             <div className='login'>
                 {/* <p>Login page</p>
                 <button onClick={loginGoogleUser}>login</button> */}
-                <input type='text' placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-                <input type='text' placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                {/* <input type='text' placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
+                <input type='text' placeholder="Password" onChange={(e) => setPassword(e.target.value)} /> */}
                 <button onClick={loginUser}>Login</button>
                 {/* <GoogleOAuthProvider clientId="544783663835-4cfdbgeem74fnc3baiu4lbtngqgpq7h0.apps.googleusercontent.com">
                     <GoogleLogin />
